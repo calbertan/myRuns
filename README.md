@@ -18,3 +18,14 @@ distance, etc. The app also features activity recognition that detects whether t
   <img src="images/map.png" alt="drawing" width="150"/>
   <img src="images/entry.png" alt="drawing" width="150"/>
 </p>
+
+## Change Log
+14/01/2023 
+```bash
+calendar.get(Calendar.MONTH) 
+```
+in MapsActivity and StartEntries is changed into
+```bash
+calendar.get(Calendar.MONTH + 1) 
+```
+to avoid `invalid value for monthofyear (valid values 1 - 12): 0`
